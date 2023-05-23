@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./Adduser.module.css";
+import styles from "./AddUser.module.css";
 import Card from "../UI/Card";
 
-function AddUser(psops) {
+function AddUser(props) {
   const addUserHandler = (e) => {
     e.preventDefault();
   };
 
   return (
-    <Card>
+    <Card className={styles.input}>
       <form onSubmit={addUserHandler}>
         <label htmlFor="username">UserName</label>
         <input id="username" type="text" />
